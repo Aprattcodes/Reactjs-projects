@@ -112,3 +112,13 @@ a:hover {
 .product-rating {
     margin-bottom: 1rem;
 }
+
+/*Sidebar*/
+
+.brand button {
+    font-size: 3rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: tomato;
+}
