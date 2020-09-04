@@ -72,6 +72,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .products li {
     list-style-type: none;
@@ -106,4 +107,8 @@ a:hover {
 .product-image {
     max-width: 34rem;
     max-height: 34rem;
+}
+
+.product-rating {
+    margin-bottom: 1rem;
 }
