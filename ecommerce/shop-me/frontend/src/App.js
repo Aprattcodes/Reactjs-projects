@@ -1,4 +1,5 @@
 import './App.css';
+import data from './data';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     }
 
     return (
-
+        <BrowserRouter>
         <div className="grid-container">
             <header className="header">
                 <div className="brand">
@@ -42,68 +43,28 @@ function App() {
             <main className="main">
                 <div className="content">
                 <ul className="products">
-                    <li>
-                        <div className="product">
-                            <img className="product-image" src="images/toy.jpg" alt="godzilla"/>
-                            <div className="product-name">
-                                <a href="product.html">Godzilla</a>
+                    {
+                        data.products.map(product =>  
+                        <li>
+                            <div className="product">
+                                <img className="product-image" src={product.image} alt="godzilla"/>
+                                <div className="product-name">
+                                        <a href="product.html">{product.name}</a>
+                                    </div>
+                                <div className="product-brand">{product.brand}</div>
+                                <div className="product-price">${product.price}</div>
+                                <div className="product-rating">{product.rating} stars ({product.numReviews})</div>
                             </div>
-                            <div className="product-brand">Tokyo</div>
-                            <div className="product-price">$25</div>
-                            <div className="product-rating">4.5 stars (10 reviews)</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="product">
-                            <img className="product-image" src="images/army.jpg" alt="army men"/>
-                            <div className="product-name">
-                                <a href="product.html">Army Men</a>
-                            </div>
-                            <div className="product-brand">Tokyo</div>
-                            <div className="product-price">$25</div>
-                            <div className="product-rating">4.5 stars (10 reviews)</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="product">
-                            <img className="product-image" src="images/furby.jpg" alt="furby"/>
-                            <div className="product-name">
-                                <a href="product.html">Furby</a>
-                            </div>
-                            <div className="product-brand">Tokyo</div>
-                            <div className="product-price">$25</div>
-                            <div className="product-rating">4.5 stars (10 reviews)</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="product">
-                            <img className="product-image" src="images/barrel-of-monkeys.jpg" alt="barrel-of-monkeys"/>
-                            <div className="product-name">
-                                <a href="product.html">Barrel of Monkeys</a>
-                            </div>
-                            <div className="product-brand">Tokyo</div>
-                            <div className="product-price">$25</div>
-                            <div className="product-rating">4.5 stars (10 reviews)</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="product">
-                            <img className="product-image" src="images/rubik.jpg" alt="rubik cube"/>
-                            <div className="product-name">
-                                <a href="product.html">Rubik's Cube</a>
-                            </div>
-                            <div className="product-brand">Tokyo</div>
-                            <div className="product-price">$25</div>
-                            <div className="product-rating">4.5 stars (10 reviews)</div>
-                        </div>
-                    </li>         
-                </ul>
+                        </li>)
+                    }
+                    </ul>
                 </div>
             </main>
             <footer className="footer">
                 All rights reserved
             </footer>
         </div>
+        </BrowserRouter>
   );
 }
 
