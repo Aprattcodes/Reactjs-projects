@@ -3,11 +3,11 @@ import {Link} from 'react-router-dom';
 import data from '../data';
 
 function HomeScreen (props) {
-    return <ul className="product">
+    return <ul className="products">
     {
       data.product.map(product =>
         <li>
-            <div className="product">
+            <div className="invProduct">
             <Link to={'/product/' + product._id}>
                 <img className="product-image" src={product.image} alt="product"/>
             </Link>
