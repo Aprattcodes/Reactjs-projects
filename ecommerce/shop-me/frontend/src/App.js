@@ -47,9 +47,9 @@ function App() {
             </li>
             <li>
                 <div className="product">
-                    <img className="product-image" src="C:\Users\alyss\Pictures\toy.jpg" alt="godzilla"/>
+                    <img className="product-image" src="images/army.jpg" alt="army men"/>
                     <div className="product-name">
-                        <a href="product.html">Godzilla</a>
+                        <a href="product.html">Army Men</a>
                     </div>
                     <div className="product-brand">Tokyo</div>
                     <div className="product-price">$25</div>
@@ -58,9 +58,9 @@ function App() {
             </li>
             <li>
                 <div className="product">
-                    <img className="product-image" src="C:\Users\alyss\Pictures\toy.jpg" alt="godzilla"/>
+                    <img className="product-image" src="images/furby.jpg" alt="furby"/>
                     <div className="product-name">
-                        <a href="product.html">Godzilla</a>
+                        <a href="product.html">Furby</a>
                     </div>
                     <div className="product-brand">Tokyo</div>
                     <div className="product-price">$25</div>
@@ -69,9 +69,9 @@ function App() {
             </li>
             <li>
                 <div className="product">
-                    <img className="product-image" src="C:\Users\alyss\Pictures\toy.jpg" alt="godzilla"/>
+                    <img className="product-image" src="images/barrel-of-monkeys.jpg" alt="barrel-of-monkeys"/>
                     <div className="product-name">
-                        <a href="product.html">Godzilla</a>
+                        <a href="product.html">Barrel of Monkeys</a>
                     </div>
                     <div className="product-brand">Tokyo</div>
                     <div className="product-price">$25</div>
@@ -80,9 +80,9 @@ function App() {
             </li>
             <li>
                 <div className="product">
-                    <img className="product-image" src="C:\Users\alyss\Pictures\toy.jpg" alt="godzilla"/>
+                    <img className="product-image" src="images/rubik.jpg" alt="rubik cube"/>
                     <div className="product-name">
-                        <a href="product.html">Godzilla</a>
+                        <a href="product.html">Rubik's Cube</a>
                       </div>
                     <div className="product-brand">Tokyo</div>
                     <div className="product-price">$25</div>
