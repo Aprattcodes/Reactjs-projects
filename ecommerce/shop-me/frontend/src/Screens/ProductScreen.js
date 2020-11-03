@@ -55,7 +55,7 @@ function ProductScreen(props) {
                         </select>
                     </li>
                     <li>
-                        <button className="button">Add to cart</button>
+                        <button className="button primary">Add to cart</button>
                     </li>
                 </ul>
             </div>
