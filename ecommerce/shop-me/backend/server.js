@@ -3,9 +3,9 @@ import data from './data';
 
 const app = express();
 
-app.get("/api/products", (req, res) => {
+app.get("/api/product", (req, res) => {
 
-    res.send(data.products);
+    res.send(data.product);
 })
 
 app.listen(5000, () => {console.log("server started at http://localhost:5000") });
