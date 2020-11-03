@@ -1,5 +1,9 @@
-import './App.css';
+import React from 'react';
 import data from './data';
+import {BrowserRouter, Route, Link} from 'react-router-dom';
+import './App.css';
+import HomeScreen from './Screens/HomeScreen'
+import ProductScreen from './Screens/ProductScreen'
 
 function App() {
 
@@ -18,7 +22,7 @@ function App() {
                     <button onClick={openMenu}>
                         &#9776;
                     </button>
-                <a href="index.html">Shopme</a>
+                <Link to="/">Shopme</Link>
                 </div>
                 <div className="header-links">
                     <a href="cart.html">Cart</a>
@@ -42,11 +46,11 @@ function App() {
             </aside>
             <main className="main">
                 <div className="content">
-                <Route path="/products/:id" component={ProductScreen}/>
+                <Route path="/product/:id" component={ProductScreen}/>
                 <Route path="/" exact={true} component={HomeScreen}/>
-                <ul className="products">
+                <ul className="product">
                     {
-                        data.products.map(product =>  
+                        data.product.map(product =>  
                         <li>
                             <div className="product">
                                 <img className="product-image" src={product.image} alt="godzilla"/>

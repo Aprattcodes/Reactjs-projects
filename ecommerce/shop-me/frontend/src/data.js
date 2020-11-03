@@ -1,5 +1,5 @@
-export default {
-    products: [
+const data = {
+    product: [
         {
         _id: '1',
         name: 'Godzilla',
@@ -44,7 +44,7 @@ export default {
         _id: '5',
         name: 'Rubik',
         category: 'Toys',
-        image: 'images/rubik.jpg',
+        image: '/images/rubik.jpg',
         price: 10,
         brand: 'Playco',
         rating: 4.5,
@@ -52,3 +52,5 @@ export default {
     },
 ]
 }
+
+export default data
